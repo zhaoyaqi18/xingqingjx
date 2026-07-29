@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="XingQing Machinery MQG/MQY/MQS series Ball Mill, effective volume 1-52.2m³, capacity 0.9-203t/h. Dry/wet grinding, grid/overflow/wet types available.">
+  <title>Ball Mill | XingQing Machinery</title>
+  <link rel="icon" href="../../images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../../css/style.css">
+  <style>
+    /* ============================================
+       Ball Mill Detail Page - Custom Styles
+       ============================================ */
+
+    /* ---------- Breadcrumb ---------- */
+    .breadcrumb {
+      padding: 100px 0 20px;
+      background: var(--bg-primary);
+    }
+    .breadcrumb-nav {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13px;
+      color: var(--text-secondary);
+    }
+    .breadcrumb-nav a {
+      color: var(--text-secondary);
+      transition: color var(--transition);
+    }
+    .breadcrumb-nav a:hover { color: var(--accent); }
+    .breadcrumb-nav .sep {
+      color: var(--border);
+      user-select: none;
+    }
+    .breadcrumb-nav .current {
+      color: var(--accent);
+      font-weight: 500;
+    }
+
+    /* ---------- Product Header ---------- */
+    .product-header {
+      padding: 20px 0 48px;
+      background: var(--bg-primary);
+    }
+    .product-header h1 {
+      font-size: 48px;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      line-height: 1.15;
+    }
+    .product-header h1 .en {
+      color: var(--accent);
+    }
+
+    /* ---------- Hero Row ---------- */
+    .hero-row {
+      display: grid;
+      grid-template-columns: 1fr 1.1fr;
+      gap: 60px;
+      align-items: center;
+      padding: 0 0 64px;
+      background: var(--bg-primary);
+    }
+    .hero-row-left {
+      max-width: 520px;
+    }
+    .hero-row-left .series-tag {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      border: 1px solid rgba(245,166,35,0.35);
+      padding: 6px 14px;
+      border-radius: 4px;
+      margin-bottom: 20px;
+    }
+    .hero-row-left .product-desc {
+      font-size: 17px;
+      color: var(--text-secondary);
+      line-height: 1.7;
+      margin-bottom: 32px;
+    }
+    .hero-row-left .hero-actions {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+    .hero-row-right {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .hero-row-right img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+    }
+    .hero-row-right .img-placeholder {
+      width: 100%;
+      aspect-ratio: 4/3;
+      background: var(--bg-secondary);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--border);
+      font-size: 48px;
+    }
+
+    /* ---------- Section Title ---------- */
+    .section-title {
+      font-size: 30px;
+      font-weight: 800;
+      color: var(--text-primary);
+      letter-spacing: -0.01em;
+      margin: 0 0 32px;
+      padding-left: 18px;
+      border-left: 4px solid var(--accent);
+      line-height: 1.2;
+    }
+    .section-title .en {
+      display: block;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--text-secondary);
+      margin-top: 6px;
+    }
+    .detail-section {
+      padding: 56px 0;
+      border-top: 1px solid var(--border);
+    }
+
+    /* ---------- Overview ---------- */
+    .overview-text {
+      font-size: 16px;
+      line-height: 1.85;
+      color: var(--text-secondary);
+      max-width: 880px;
+    }
+
+    /* ---------- Working Principle ---------- */
+    .principle-steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      margin-bottom: 40px;
+    }
+    .principle-step {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 28px 24px;
+      position: relative;
+      transition: border-color var(--transition);
+    }
+    .principle-step:hover {
+      border-color: var(--accent);
+    }
+    .principle-step .step-num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background: var(--accent);
+      color: #1a1a1a;
+      font-size: 17px;
+      font-weight: 800;
+      margin-bottom: 16px;
+    }
+    .principle-step h3 {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 10px;
+    }
+    .principle-step p {
+      font-size: 13px;
+      line-height: 1.7;
+      color: var(--text-secondary);
+    }
+    .principle-flow {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 24px 28px;
+    }
+    .principle-flow .flow-label {
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 12px;
+    }
+    .principle-flow .flow-path {
+      font-size: 15px;
+      color: var(--text-primary);
+      line-height: 1.8;
+      font-weight: 600;
+    }
+    .principle-flow .flow-path .arrow {
+      color: var(--accent);
+      margin: 0 8px;
+    }
+
+    /* ---------- Params Table ---------- */
+    .table-scroll {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+    }
+    .params-table {
+      width: 100%;
+      min-width: 1100px;
+      border-collapse: collapse;
+      font-size: 13px;
+    }
+    .params-table thead {
+      background: var(--bg-secondary);
+    }
+    .params-table th {
+      padding: 14px 12px;
+      text-align: center;
+      font-weight: 700;
+      font-size: 12px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: var(--accent);
+      border-bottom: 1px solid var(--border);
+      white-space: nowrap;
+    }
+    .params-table td {
+      padding: 11px 12px;
+      text-align: center;
+      color: var(--text-secondary);
+      border-bottom: 1px solid var(--border);
+      white-space: nowrap;
+    }
+    .params-table tbody tr:nth-child(even) {
+      background: rgba(255,255,255,0.015);
+    }
+    .params-table tbody tr:hover {
+      background: rgba(245,166,35,0.06);
+    }
+    .params-table .model-col {
+      color: var(--text-primary);
+      font-weight: 600;
+    }
+    .params-note {
+      margin-top: 14px;
+      font-size: 12px;
+      color: var(--text-secondary);
+    }
+
+    /* ---------- Structure Table ---------- */
+    .structure-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .structure-table thead {
+      background: var(--bg-secondary);
+    }
+    .structure-table th {
+      padding: 14px 18px;
+      text-align: left;
+      font-weight: 700;
+      font-size: 13px;
+      letter-spacing: 0.05em;
+      color: var(--accent);
+      border-bottom: 1px solid var(--border);
+    }
+    .structure-table td {
+      padding: 14px 18px;
+      color: var(--text-secondary);
+      border-bottom: 1px solid var(--border);
+      line-height: 1.6;
+      vertical-align: top;
+    }
+    .structure-table tbody tr:nth-child(even) {
+      background: rgba(255,255,255,0.015);
+    }
+    .structure-table tbody tr:hover {
+      background: rgba(245,166,35,0.06);
+    }
+    .structure-table .part-col {
+      color: var(--text-primary);
+      font-weight: 700;
+      white-space: nowrap;
+    }
+    .structure-table .mat-col {
+      color: var(--accent);
+      white-space: nowrap;
+    }
+
+    /* ---------- Features Grid ---------- */
+    .features-grid-2col {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+    .feature-item {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 28px 28px 28px 52px;
+      position: relative;
+      transition: border-color var(--transition);
+    }
+    .feature-item:hover {
+      border-color: var(--accent);
+    }
+    .feature-item::before {
+      content: '';
+      position: absolute;
+      left: 22px;
+      top: 32px;
+      width: 14px;
+      height: 14px;
+      background: var(--accent);
+      transform: rotate(45deg);
+      border-radius: 2px;
+    }
+    .feature-item h3 {
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: var(--text-primary);
+    }
+    .feature-item p {
+      font-size: 13px;
+      color: var(--text-secondary);
+      line-height: 1.65;
+    }
+
+    /* ---------- Application Cards ---------- */
+    .app-cards {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      margin-bottom: 36px;
+    }
+    .app-card {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 28px;
+      transition: border-color var(--transition);
+    }
+    .app-card:hover {
+      border-color: var(--accent);
+    }
+    .app-card h3 {
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .app-card h3::before {
+      content: '';
+      width: 8px;
+      height: 8px;
+      background: var(--accent);
+      transform: rotate(45deg);
+      border-radius: 1px;
+      flex-shrink: 0;
+    }
+    .app-card p {
+      font-size: 14px;
+      line-height: 1.75;
+      color: var(--text-secondary);
+    }
+    .app-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .app-tag {
+      display: inline-block;
+      padding: 10px 22px;
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--text-secondary);
+      background: var(--bg-secondary);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      transition: all var(--transition);
+    }
+    .app-tag:hover {
+      color: var(--accent);
+      border-color: var(--accent);
+      background: rgba(245,166,35,0.06);
+    }
+
+    /* ---------- Selection Advice ---------- */
+    .advice-list {
+      list-style: none;
+      counter-reset: advice;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      gap: 16px;
+    }
+    .advice-list li {
+      counter-increment: advice;
+      background: var(--bg-secondary);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 22px 24px 22px 64px;
+      position: relative;
+      font-size: 14px;
+      line-height: 1.75;
+      color: var(--text-secondary);
+    }
+    .advice-list li::before {
+      content: counter(advice);
+      position: absolute;
+      left: 20px;
+      top: 22px;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: var(--accent);
+      color: #1a1a1a;
+      font-size: 15px;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .advice-list li strong {
+      color: var(--text-primary);
+    }
+
+    /* ---------- Bottom CTA ---------- */
+    .detail-cta {
+      padding: 64px 0;
+      background: var(--bg-secondary);
+      border-top: 1px solid var(--border);
+    }
+    .detail-cta-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 32px;
+      flex-wrap: wrap;
+    }
+    .detail-cta-text {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--text-primary);
+    }
+    .detail-cta-text span {
+      color: var(--accent);
+    }
+    .detail-cta-btns {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    /* ---------- Responsive ---------- */
+    @media (max-width: 1024px) {
+      .hero-row {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+      .features-grid-2col {
+        grid-template-columns: 1fr;
+      }
+      .principle-steps {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .app-cards {
+        grid-template-columns: 1fr;
+      }
+      .product-header h1 {
+        font-size: 36px;
+      }
+    }
+    @media (max-width: 768px) {
+      .product-header h1 {
+        font-size: 28px;
+      }
+      .section-title {
+        font-size: 24px;
+      }
+      .principle-steps {
+        grid-template-columns: 1fr;
+      }
+      .detail-cta-inner {
+        flex-direction: column;
+        text-align: center;
+      }
+      .feature-item {
+        padding: 22px 20px 22px 44px;
+      }
+      .feature-item::before {
+        left: 18px;
+        top: 26px;
+        width: 11px;
+        height: 11px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ============ NAVIGATION (global) ============ -->
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a href="../../../index.html" class="nav-logo"><img src="../../../images/logo-color.png" alt="XingQing Machinery" height="36"> XingQing Machinery</a>
+                  <div class="nav-links">
+        <a href="../../../index.html">Home</a>
+        <a href="../../../products/crushing.html">Products</a>
+        <a href="../../../projects/">Projects</a>
+        <a href="../../../about/">About Us</a>
+        <a href="../../../contact/">Contact Us</a>
+      </div>
+      <div class="nav-actions">
+        <a href="../../../contact/" class="nav-cta">Get a Quote</a>
+      </div>
+      <button class="nav-hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="mobile-overlay"></div>
+  <div class="mobile-menu">
+    <button class="mobile-close">&times;</button>
+    
+    
+    
+    
+    
+    
+          <a href="../../../index.html">Home</a>
+    <a href="../../../products/crushing.html">Products</a>
+    <a href="../../../projects/">Projects</a>
+    <a href="../../../about/">About Us</a>
+    <a href="../../../contact/">Contact Us</a>
+    </div>
+
+  <!-- ============ BREADCRUMB ============ -->
+  <section class="breadcrumb">
+    <div class="container">
+      <nav class="breadcrumb-nav">
+        <a href="../../../index.html">Home</a>
+        <span class="sep">/</span>
+        <a href="../../../products/grinding.html">Grinding Equipment</a>
+        <span class="sep">/</span>
+        <span class="current">Ball Mill</span>
+      </nav>
+    </div>
+  </section>
+
+  <!-- ============ PRODUCT HEADER ============ -->
+  <section class="product-header">
+    <div class="container">
+      <h1><span class="en">Ball Mill</span></h1>
+    </div>
+  </section>
+
+  <!-- ============ HERO ROW ============ -->
+  <section class="hero-row container">
+    <div class="hero-row-left">
+      <div class="series-tag">MQG / MQY / MQS Series</div>
+      <p class="product-desc">MQG/MQY/MQS Series Ball Mill, key equipment for grinding after crushing. Dry/wet dual use, grid/overflow optional, widely used in mining, building materials, chemical, electric power and other industries.</p>
+      <div class="hero-actions">
+        <a href="../../../contact/" class="btn btn-primary">Get a Quote</a>
+        <a href="#" class="btn btn-outline">Download Brochure</a>
+      </div>
+    </div>
+    <div class="hero-row-right">
+      <img src="../../images/球磨机.jpg" alt="Ball Mill" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+      <div class="img-placeholder" style="display:none;">Ball Mill</div>
+    </div>
+  </section>
+
+  <!-- ============ 1. Product Overview ============ -->
+  <section class="detail-section">
+    <div class="container">
+      <h2 class="section-title">Product Overview<span class="en">Product Overview</span></h2>
+      <p class="overview-text">
+        The Ball Mill is key equipment for grinding crushed materials. It is widely used in cement, silicate products, new building materials, refractories, fertilizers, black and non-ferrous metal beneficiation, and glass ceramics industries, for dry or wet grinding of various ores and other grindable materials. The Ball Mill is suitable for grinding various ores and other materials, widely used in beneficiation, building materials, chemical and other industries, available in dry and wet grinding modes. By discharge method, it can be divided into grid type and overflow type. A certain number of steel balls are loaded into the cylinder as grinding media. When the cylinder rotates, the grinding media are carried up by centrifugal force and friction, then fall to crush the material through the dual action of impact and grinding.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ 2. Working Principle ============ -->
+  <section class="detail-section">
+    <div class="container">
+      <h2 class="section-title">Working Principle<span class="en">Working Principle</span></h2>
+      <div class="principle-steps">
+        <div class="principle-step">
+          <div class="step-num">1</div>
+          <h3>Feed</h3>
+          <p>Material is continuously fed into the rotating cylinder through the feed device. The cylinder is pre-loaded with a certain quantity and gradation of steel balls as grinding media.</p>
+        </div>
+        <div class="principle-step">
+          <div class="step-num">2</div>
+          <h3>Lifting</h3>
+          <p>The cylinder rotates at 60%-80% of critical speed. Steel balls are carried upward by centrifugal force and liner friction.</p>
+        </div>
+        <div class="principle-step">
+          <div class="step-num">3</div>
+          <h3>Falling Impact</h3>
+          <p>When the steel balls reach a certain height, gravity overcomes centrifugal force and they fall in a parabolic trajectory, producing intense impact and grinding on the material to achieve crushing and pulverization.</p>
+        </div>
+        <div class="principle-step">
+          <div class="step-num">4</div>
+          <h3>Discharge</h3>
+          <p>The ground material flows toward the discharge end driven by material level difference and airflow, discharged through the discharge device. Coarse particles are intercepted by the partition plate and returned for further grinding.</p>
+        </div>
+      </div>
+      <div class="principle-flow">
+        <div class="flow-label">Power Transmission Path</div>
+        <div class="flow-path">
+          Motor <span class="arrow">→</span> Reducer <span class="arrow">→</span> Pinion <span class="arrow">→</span> Ring Gear <span class="arrow">→</span> Cylinder <span class="arrow">→</span> Liner <span class="arrow">→</span> Grinding Media <span class="arrow">→</span> Material
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 3. Technical Parameters ============ -->
+  <section class="detail-section">
+    <div class="container">
+      <h2 class="section-title">Technical Parameters<span class="en">Technical Parameters</span></h2>
+      <div class="table-scroll">
+        <table class="params-table">
+          <thead>
+            <tr>
+              <th>Model</th>
+              <th>Effective Volume<br>(m³)</th>
+              <th>Ball Load MQG<br>(t)</th>
+              <th>Ball Load MQY<br>(t)</th>
+              <th>Ball Load MQS<br>(t)</th>
+              <th>Capacity MQG<br>(t/h)</th>
+              <th>Capacity MQY<br>(t/h)</th>
+              <th>Capacity MQS<br>(t/h)</th>
+              <th>Power<br>(kW)</th>
+              <th>Weight<br>(t)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td class="model-col">Φ900×1800</td><td>1</td><td>1.3</td><td>1.7</td><td>2</td><td>0.9–1.6</td><td>1.7–3.2</td><td>2–3.7</td><td>15</td><td>4.2</td></tr>
+            <tr><td class="model-col">Φ900×2100</td><td>1.1</td><td>1.5</td><td>1.9</td><td>2.3</td><td>1–1.9</td><td>2–3.7</td><td>2.3–4.3</td><td>18.5</td><td>4.9</td></tr>
+            <tr><td class="model-col">Φ900×3000</td><td>1.6</td><td>2.2</td><td>2.8</td><td>3.3</td><td>1.4–2.7</td><td>2.9–5.4</td><td>3.3–6.2</td><td>22</td><td>7.6</td></tr>
+            <tr><td class="model-col">Φ1200×2400</td><td>2.4</td><td>3.3</td><td>4.1</td><td>4.9</td><td>2.2–4</td><td>4.3–8</td><td>5–9.2</td><td>30</td><td>8.7</td></tr>
+            <tr><td class="model-col">Φ1200×3000</td><td>3</td><td>4.1</td><td>5.2</td><td>6.2</td><td>2.7–5</td><td>5.4–10</td><td>6.2–12</td><td>37</td><td>9.5</td></tr>
+            <tr><td class="model-col">Φ1200×4500</td><td>4.4</td><td>6.2</td><td>7.7</td><td>9.3</td><td>4–7.5</td><td>8.1–15</td><td>9.3–17</td><td>45</td><td>13</td></tr>
+            <tr><td class="model-col">Φ1500×3000</td><td>4.8</td><td>6.6</td><td>8.3</td><td>10</td><td>4.3–8</td><td>8.6–16</td><td>10–19</td><td>75</td><td>15</td></tr>
+            <tr><td class="model-col">Φ1500×4500</td><td>7.1</td><td>10</td><td>12</td><td>15</td><td>6.5–12</td><td>13–24</td><td>15–28</td><td>115</td><td>20</td></tr>
+            <tr><td class="model-col">Φ1200×5700</td><td>9</td><td>13</td><td>16</td><td>19</td><td>8.2–15</td><td>16–31</td><td>19–35</td><td>135</td><td>24</td></tr>
+            <tr><td class="model-col">Φ1830×3000</td><td>7.1</td><td>10</td><td>12</td><td>15</td><td>6.4–12</td><td>13–24</td><td>15–28</td><td>115</td><td>28</td></tr>
+            <tr><td class="model-col">Φ1830×4500</td><td>10.6</td><td>15</td><td>18</td><td>22</td><td>10–18</td><td>19–36</td><td>22–41</td><td>155</td><td>32</td></tr>
+            <tr><td class="model-col">Φ1830×6500</td><td>15.3</td><td>21</td><td>27</td><td>32</td><td>14–26</td><td>28–52</td><td>32–60</td><td>210</td><td>35</td></tr>
+            <tr><td class="model-col">Φ1830×7000</td><td>16.5</td><td>23</td><td>29</td><td>34</td><td>15–28</td><td>30–56</td><td>35–64</td><td>210</td><td>37</td></tr>
+            <tr><td class="model-col">Φ2100×3000</td><td>9.4</td><td>13</td><td>16</td><td>20</td><td>9–16</td><td>17–32</td><td>20–37</td><td>180</td><td>42</td></tr>
+            <tr><td class="model-col">Φ2100×3600</td><td>11.3</td><td>16</td><td>20</td><td>24</td><td>10–19</td><td>21–38</td><td>24–44</td><td>210</td><td>48</td></tr>
+            <tr><td class="model-col">Φ2100×4000</td><td>12.6</td><td>18</td><td>22</td><td>26</td><td>11–21</td><td>23–42</td><td>26–49</td><td>210</td><td>50</td></tr>
+            <tr><td class="model-col">Φ2100×4500</td><td>14.1</td><td>20</td><td>25</td><td>30</td><td>13–24</td><td>26–48</td><td>30–55</td><td>245</td><td>52</td></tr>
+            <tr><td class="model-col">Φ2100×7000</td><td>22</td><td>31</td><td>38</td><td>46</td><td>20–37</td><td>40–74</td><td>46–86</td><td>280</td><td>57</td></tr>
+            <tr><td class="model-col">Φ2200×3600</td><td>12.5</td><td>17</td><td>22</td><td>26</td><td>11–21</td><td>23–42</td><td>26–49</td><td>210</td><td>52</td></tr>
+            <tr><td class="model-col">Φ2200×4500</td><td>15.6</td><td>22</td><td>27</td><td>33</td><td>14–26</td><td>28–53</td><td>33–61</td><td>245</td><td>54</td></tr>
+            <tr><td class="model-col">Φ2200×6500</td><td>22.5</td><td>31</td><td>39</td><td>47</td><td>20–38</td><td>41–76</td><td>47–88</td><td>320</td><td>60</td></tr>
+            <tr><td class="model-col">Φ2200×7000</td><td>24.2</td><td>34</td><td>42</td><td>51</td><td>22–41</td><td>44–82</td><td>51–95</td><td>320</td><td>63</td></tr>
+            <tr><td class="model-col">Φ2200×8000</td><td>27.8</td><td>38</td><td>48</td><td>57</td><td>26–46</td><td>49–90</td><td>57–104</td><td>380</td><td>67</td></tr>
+            <tr><td class="model-col">Φ2400×3600</td><td>15</td><td>21</td><td>26</td><td>31</td><td>14–25</td><td>27–51</td><td>31–58</td><td>245</td><td>60</td></tr>
+            <tr><td class="model-col">Φ2400×4500</td><td>18.7</td><td>26</td><td>33</td><td>39</td><td>17–32</td><td>34–63</td><td>39–73</td><td>380</td><td>65</td></tr>
+            <tr><td class="model-col">Φ2400×6000</td><td>24.9</td><td>35</td><td>43</td><td>52</td><td>23–42</td><td>45–84</td><td>52–97</td><td>400</td><td>84</td></tr>
+            <tr><td class="model-col">Φ2400×7000</td><td>29.1</td><td>41</td><td>51</td><td>61</td><td>26–49</td><td>53–98</td><td>61–113</td><td>400</td><td>92</td></tr>
+            <tr><td class="model-col">Φ2700×3600</td><td>18.8</td><td>26</td><td>33</td><td>39</td><td>17–32</td><td>34–64</td><td>40–73</td><td>400</td><td>89</td></tr>
+            <tr><td class="model-col">Φ2700×4500</td><td>23.5</td><td>33</td><td>41</td><td>49</td><td>21–40</td><td>43–80</td><td>49–92</td><td>450</td><td>108</td></tr>
+            <tr><td class="model-col">Φ2700×6000</td><td>31.4</td><td>44</td><td>55</td><td>66</td><td>29–53</td><td>57–106</td><td>66–122</td><td>560</td><td>105</td></tr>
+            <tr><td class="model-col">Φ2700×7000</td><td>36.6</td><td>51</td><td>64</td><td>77</td><td>33–62</td><td>67–124</td><td>77–143</td><td>630</td><td>110</td></tr>
+            <tr><td class="model-col">Φ3200×4500</td><td>33.5</td><td>47</td><td>58</td><td>70</td><td>31–57</td><td>61–113</td><td>70–131</td><td>800</td><td>137</td></tr>
+            <tr><td class="model-col">Φ3200×6000</td><td>44.7</td><td>62</td><td>78</td><td>94</td><td>41–76</td><td>81–151</td><td>94–174</td><td>1000</td><td>160</td></tr>
+            <tr><td class="model-col">Φ3200×7000</td><td>52.2</td><td>73</td><td>91</td><td>109</td><td>47–88</td><td>95–176</td><td>110–203</td><td>1250</td><td>185</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="params-note">※ Specifications subject to change without notice. MQG = Grid type, MQY = Overflow type, MQS = Wet type.</p>
+    </div>
+  </section>
+
+  <!-- ============ 4. Structure Components ============ -->
+  <section class="detail-section">
+    <div class="container">
+      <h2 class="section-title">Structure Components<span class="en">Structure Components</span></h2>
+      <table class="structure-table">
+        <thead>
+          <tr>
+            <th>Component</th>
+            <th>Function</th>
+            <th>Material / Features</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="part-col">Cylinder</td>
+            <td>Core rotating component, carries grinding media and material, withstands continuous impact and wear</td>
+            <td class="mat-col">Steel plate welded, with wear-resistant liner inside</td>
+          </tr>
+          <tr>
+            <td class="part-col">Feed Device</td>
+            <td>Continuously feeds material into the cylinder, ensuring even feeding</td>
+            <td class="mat-col">Feed end hollow shaft + spiral conveyor</td>
+          </tr>
+          <tr>
+            <td class="part-col">Discharge Device</td>
+            <td>Discharges ground fine material, coarse particles intercepted and returned</td>
+            <td class="mat-col">Discharge end hollow shaft + grid plate/overflow weir</td>
+          </tr>
+          <tr>
+            <td class="part-col">Grinding Media</td>
+            <td>Steel balls fall and impact inside the cylinder, grinding the material</td>
+            <td class="mat-col">Forged steel balls / high-chromium cast balls, multi-stage gradation</td>
+          </tr>
+          <tr>
+            <td class="part-col">Drive System</td>
+            <td>Drives the cylinder to rotate at set speed, providing crushing power</td>
+            <td class="mat-col">Motor + reducer + pinion + ring gear</td>
+          </tr>
+          <tr>
+            <td class="part-col">Lining 衬板与隔仓板 Partition Plates</td>
+            <td>Protects cylinder from wear, separates chambers, optimizes media distribution</td>
+            <td class="mat-col">High manganese steel / high chrome steel / rubber, stepped design</td>
+          </tr>
+          <tr>
+            <td class="part-col">Main Bearing</td>
+            <td>Supports cylinder smooth rotation, bears radial load</td>
+            <td class="mat-col">Plain bearing / rolling bearing, forced lubrication</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ============ 5. Product Features ============ -->
+  <section class="detail-section">
+    <div class="container">
+      <h2 class="section-title">Product Features<span class="en">Product Features</span></h2>
+      <div class="features-grid-2col">
+        <div class="feature-item">
+          <h3>High Capacity</h3>
+          <p>Single unit daily output can reach hundreds of tons, suitable for large-scale industrial continuous production. MQG/MQY/MQS three series cover all scenarios from laboratory to heavy mining.</p>
+        </div>
+        <div class="feature-item">
+          <h3>Dry & Wet Dual Use</h3>
+          <p>Flexible choice of dry or wet grinding based on process requirements. Dry type suitable for cement, coal powder; wet type suitable for beneficiation. Extremely adaptable.</p>
+        </div>
+        <div class="feature-item">
+          <h3>Controllable Discharge Size</h3>
+          <p>By adjusting steel ball gradation (large balls for impact + small balls for grinding), filling rate, and speed, precisely control discharge fineness to meet different downstream process requirements.</p>
+        </div>
+        <div class="feature-item">
+          <h3>Mature & Stable Technology</h3>
+          <p>Classic grinding equipment proven by a century of industrial verification. Stable and reliable operation, can be connected to DCS system for automated control and remote monitoring.</p>
+        </div>
+        <div class="feature-item">
+          <h3>Strong Adaptability</h3>
+          <p>Suitable for various ores and materials with Mohs hardness 1-9, from soft limestone to hard iron ore, all processed efficiently.</p>
+        </div>
+        <div class="feature-item">
+          <h3>Rugged & Durable Structure</h3>
+          <p>Heavy-duty welded cylinder + alloy steel main bearing + high-chrome cast steel liner. Key components designed for long service life under continuous heavy-load conditions.</p>
+        </div>
+        <div class="feature-item">
+          <h3>Easy Maintenance</h3>
+          <p>Modular design, quick replacement of liners and steel balls. Standardized lubrication system, low maintenance cost, short downtime, strong spare parts commonality.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 6. Application Fields ============ -->
+  <section class="detail-section">
+    <div class="container">
+      <h2 class="section-title">Application Fields<span class="en">Application Fields</span></h2>
+      <div class="app-cards">
+        <div class="app-card">
+          <h3>Mining Industry</h3>
+          <p>Core grinding equipment in metal ore (iron, copper, gold, manganese, etc.) beneficiation plants, achieving full mineral liberation from gangue for subsequent flotation or magnetic separation.</p>
+        </div>
+        <div class="app-card">
+          <h3>Building Materials Industry</h3>
+          <p>Raw meal grinding (limestone, clay) and cement grinding (clinker) in cement production lines, as well as grinding of gypsum and slag powder.</p>
+        </div>
+        <div class="app-card">
+          <h3>Chemical Industry</h3>
+          <p>Ultra-fine grinding of chemical raw materials such as fertilizer materials (phosphate rock), pigments (titanium dioxide), and catalyst carriers. With classification equipment, can produce micron-level powders.</p>
+        </div>
+        <div class="app-card">
+          <h3>Power & Environmental Protection</h3>
+          <p>Coal powder preparation in thermal power plants (steel ball coal mill), grinding coal into fine powder to improve combustion efficiency. Industrial waste slag recycling grinding for resource reuse.</p>
+        </div>
+      </div>
+      <div class="app-tags">
+        <span class="app-tag">Iron Ore</span>
+        <span class="app-tag">Copper Ore</span>
+        <span class="app-tag">Gold Ore</span>
+        <span class="app-tag">Cement Clinker</span>
+        <span class="app-tag">Limestone</span>
+        <span class="app-tag">Quartz Sand</span>
+        <span class="app-tag">Coal Powder</span>
+        <span class="app-tag">Phosphate Rock</span>
+        <span class="app-tag">Kaolin</span>
+        <span class="app-tag">Feldspar</span>
+        <span class="app-tag">Slag</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 7. Selection Advice ============ -->
+  <section class="detail-section">
+    <div class="container">
+      <h2 class="section-title">Selection Advice<span class="en">Selection Advice</span></h2>
+      <ol class="advice-list">
+        <li><strong>Material Hardness:</strong> For Mohs hardness 6+ (iron ore, granite), recommend Φ2100 and above with high-chrome cast steel liners and larger diameter steel balls. For soft materials (limestone, coal), medium-small specs are optional.</li>
+        <li><strong>Capacity Requirements:</strong> For daily throughput under 200 tons, recommend Φ1500×3000 ~ Φ1830×4500. For thousand-ton daily output, recommend Φ2400×7000 and above, achieving stable single-unit output of 50-100 t/h.</li>
+        <li><strong>MQG vs MQY vs MQS:</strong> MQG grid type with forced discharge, suitable for coarse grinding and primary grinding. MQY overflow type with gravity discharge by material level difference, suitable for fine grinding. MQS wet type suitable for beneficiation processes, forming a closed circuit with classifier.</li>
+        <li><strong>Fineness & Cylinder Length:</strong> For coarse grinding (discharge 0.3-0.15mm), choose short cylinder (L/D≈1-1.5). For fine grinding (discharge <0.074mm), choose long cylinder (L/D>3), can beCoordination with classification equipment for ultra-fine grinding.</li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ BOTTOM CTA ============ -->
+  <section class="detail-cta">
+    <div class="container detail-cta-inner">
+      <p class="detail-cta-text">Interested in <span>Ball Mill</span>? Contact us now for a quote and solution</p>
+      <div class="detail-cta-btns">
+        <a href="../../../contact/" class="btn btn-primary">Get a Quote</a>
+        <a href="mailto:1106897155@qq.com" class="btn btn-outline">Send Email</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER (global) ============ -->
+      <footer class="footer">
+    <div class="container">
+      <div class="footer-grid" style="grid-template-columns:1fr 1fr;">
+        <div class="footer-brand">
+          <a href="../../../" class="nav-logo"><img src="../../../images/logo-color.png" alt="XingQing Machinery" height="36"> XingQing Machinery</a>
+          <p>ISO 9001 certified mining equipment manufacturer since 2008.</p>
+        </div>
+        <div class="footer-col" style="text-align:right;">
+          <h4>Contact</h4>
+          <a href="mailto:1106897155@qq.com">1106897155@qq.com</a>
+          <a href="tel:+861972931688">+86 19712931688</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 XingQing Machinery. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../../../js/main.js"></script>
+</body>
+</html>

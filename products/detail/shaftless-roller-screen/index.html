@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="XingQing Machinery Shaftless Roller Screen, GS Series, no center shaft design, fine classification, high output, tangle-free. For sand & gravel, waste sorting, coal classification.">
+  <title>Shaftless Roller Screen | XingQing Machinery</title>
+  <link rel="icon" href="../../images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../../css/style.css">
+  <style>
+    /* ============================================
+       Jaw Crusher Detail Page - Custom Styles
+       ============================================ */
+
+    /* ---------- Breadcrumb ---------- */
+    .breadcrumb {
+      padding: 100px 0 20px;
+      background: var(--bg-primary);
+    }
+    .breadcrumb-nav {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13px;
+      color: var(--text-secondary);
+    }
+    .breadcrumb-nav a {
+      color: var(--text-secondary);
+      transition: color var(--transition);
+    }
+    .breadcrumb-nav a:hover { color: var(--accent); }
+    .breadcrumb-nav .sep {
+      color: var(--border);
+      user-select: none;
+    }
+    .breadcrumb-nav .current {
+      color: var(--accent);
+      font-weight: 500;
+    }
+
+    /* ---------- Product Header ---------- */
+    .product-header {
+      padding: 20px 0 48px;
+      background: var(--bg-primary);
+    }
+    .product-header h1 {
+      font-size: 48px;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      line-height: 1.15;
+    }
+    .product-header h1 .en {
+      color: var(--accent);
+    }
+
+    /* ---------- Hero Row ---------- */
+    .hero-row {
+      display: grid;
+      grid-template-columns: 1fr 1.1fr;
+      gap: 60px;
+      align-items: center;
+      padding: 0 0 64px;
+      background: var(--bg-primary);
+    }
+    .hero-row-left {
+      max-width: 520px;
+    }
+    .hero-row-left .series-tag {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      border: 1px solid rgba(245,166,35,0.35);
+      padding: 6px 14px;
+      border-radius: 4px;
+      margin-bottom: 20px;
+    }
+    .hero-row-left .product-desc {
+      font-size: 17px;
+      color: var(--text-secondary);
+      line-height: 1.7;
+      margin-bottom: 32px;
+    }
+    .hero-row-left .hero-actions {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+    .hero-row-right {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .hero-row-right img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+    }
+    .hero-row-right .img-placeholder {
+      width: 100%;
+      aspect-ratio: 4/3;
+      background: var(--bg-secondary);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--border);
+      font-size: 48px;
+    }
+
+    /* ---------- Section Title ---------- */
+    .section-title {
+      font-size: 30px;
+      font-weight: 800;
+      color: var(--text-primary);
+      letter-spacing: -0.01em;
+      margin: 0 0 32px;
+      padding-left: 18px;
+      border-left: 4px solid var(--accent);
+      line-height: 1.2;
+    }
+    .section-title .en {
+      display: block;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--text-secondary);
+      margin-top: 6px;
+    }
+    .detail-section {
+      padding: 56px 0;
+      border-top: 1px solid var(--border);
+    }
+
+    /* Overview */
+    .overview-text {
+      font-size: 16px;
+      line-height: 1.85;
+      color: var(--text-secondary);
+      margin-bottom: 40px;
+      max-width: 880px;
+    }
+
+    /* ---------- Working Principle ---------- */
+    .principle-steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      margin-bottom: 40px;
+    }
+    .principle-step {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 28px 24px;
+      position: relative;
+      transition: border-color var(--transition);
+    }
+    .principle-step:hover {
+      border-color: var(--accent);
+    }
+    .principle-step .step-num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background: var(--accent);
+      color: #1a1a1a;
+      font-size: 17px;
+      font-weight: 800;
+      margin-bottom: 16px;
+    }
+    .principle-step h3 {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 10px;
+    }
+    .principle-step p {
+      font-size: 13px;
+      line-height: 1.7;
+      color: var(--text-secondary);
+    }
+    .principle-flow {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 24px 28px;
+    }
+    .principle-flow .flow-label {
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 12px;
+    }
+    .principle-flow .flow-path {
+      font-size: 15px;
+      color: var(--text-primary);
+      line-height: 1.8;
+      font-weight: 600;
+    }
+    .principle-flow .flow-path .arrow {
+      color: var(--accent);
+      margin: 0 8px;
+    }
+
+    /* ---------- Params Table ---------- */
+    .table-scroll {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+    }
+    .params-table {
+      width: 100%;
+      min-width: 1100px;
+      border-collapse: collapse;
+      font-size: 13px;
+    }
+    .params-table thead {
+      background: var(--bg-secondary);
+    }
+    .params-table th {
+      padding: 14px 12px;
+      text-align: center;
+      font-weight: 700;
+      font-size: 12px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: var(--accent);
+      border-bottom: 1px solid var(--border);
+      white-space: nowrap;
+    }
+    .params-table td {
+      padding: 11px 12px;
+      text-align: center;
+      color: var(--text-secondary);
+      border-bottom: 1px solid var(--border);
+      white-space: nowrap;
+    }
+    .params-table tbody tr:nth-child(even) {
+      background: rgba(255,255,255,0.015);
+    }
+    .params-table tbody tr:hover {
+      background: rgba(245,166,35,0.06);
+    }
+    .params-table .model-col {
+      color: var(--text-primary);
+      font-weight: 600;
+    }
+    .params-note {
+      margin-top: 14px;
+      font-size: 12px;
+      color: var(--text-secondary);
+    }
+
+    /* ---------- Structure Table ---------- */
+    .structure-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .structure-table thead {
+      background: var(--bg-secondary);
+    }
+    .structure-table th {
+      padding: 14px 18px;
+      text-align: left;
+      font-weight: 700;
+      font-size: 13px;
+      letter-spacing: 0.05em;
+      color: var(--accent);
+      border-bottom: 1px solid var(--border);
+    }
+    .structure-table td {
+      padding: 14px 18px;
+      color: var(--text-secondary);
+      border-bottom: 1px solid var(--border);
+      line-height: 1.6;
+      vertical-align: top;
+    }
+    .structure-table tbody tr:nth-child(even) {
+      background: rgba(255,255,255,0.015);
+    }
+    .structure-table tbody tr:hover {
+      background: rgba(245,166,35,0.06);
+    }
+    .structure-table .part-col {
+      color: var(--text-primary);
+      font-weight: 700;
+      white-space: nowrap;
+    }
+    .structure-table .mat-col {
+      color: var(--accent);
+      white-space: nowrap;
+    }
+
+    /* ---------- Features Grid ---------- */
+    .features-grid-2col {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+    .feature-item {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 28px 28px 28px 52px;
+      position: relative;
+      transition: border-color var(--transition);
+    }
+    .feature-item:hover {
+      border-color: var(--accent);
+    }
+    .feature-item::before {
+      content: '';
+      position: absolute;
+      left: 22px;
+      top: 32px;
+      width: 14px;
+      height: 14px;
+      background: var(--accent);
+      transform: rotate(45deg);
+      border-radius: 2px;
+    }
+    .feature-item h3 {
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: var(--text-primary);
+    }
+    .feature-item p {
+      font-size: 13px;
+      color: var(--text-secondary);
+      line-height: 1.65;
+    }
+
+    /* ---------- Application Cards ---------- */
+    .app-cards {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      margin-bottom: 36px;
+    }
+    .app-card {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 28px;
+      transition: border-color var(--transition);
+    }
+    .app-card:hover {
+      border-color: var(--accent);
+    }
+    .app-card h3 {
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .app-card h3::before {
+      content: '';
+      width: 8px;
+      height: 8px;
+      background: var(--accent);
+      transform: rotate(45deg);
+      border-radius: 1px;
+      flex-shrink: 0;
+    }
+    .app-card p {
+      font-size: 14px;
+      line-height: 1.75;
+      color: var(--text-secondary);
+    }
+    .app-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .app-tag {
+      display: inline-block;
+      padding: 10px 22px;
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--text-secondary);
+      background: var(--bg-secondary);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      transition: all var(--transition);
+    }
+    .app-tag:hover {
+      color: var(--accent);
+      border-color: var(--accent);
+      background: rgba(245,166,35,0.06);
+    }
+
+    /* ---------- Selection Advice ---------- */
+    .advice-list {
+      list-style: none;
+      counter-reset: advice;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      gap: 16px;
+    }
+    .advice-list li {
+      counter-increment: advice;
+      background: var(--bg-secondary);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 22px 24px 22px 64px;
+      position: relative;
+      font-size: 14px;
+      line-height: 1.75;
+      color: var(--text-secondary);
+    }
+    .advice-list li::before {
+      content: counter(advice);
+      position: absolute;
+      left: 20px;
+      top: 22px;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: var(--accent);
+      color: #1a1a1a;
+      font-size: 15px;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .advice-list li strong {
+      color: var(--text-primary);
+    }
+
+    /* ---------- Bottom CTA ---------- */
+    .detail-cta {
+      padding: 64px 0;
+      background: var(--bg-secondary);
+      border-top: 1px solid var(--border);
+    }
+    .detail-cta-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 32px;
+      flex-wrap: wrap;
+    }
+    .detail-cta-text {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--text-primary);
+    }
+    .detail-cta-text span {
+      color: var(--accent);
+    }
+    .detail-cta-btns {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    /* ---------- Responsive ---------- */
+    @media (max-width: 1024px) {
+      .hero-row {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+      .features-grid-2col {
+        grid-template-columns: 1fr;
+      }
+      .principle-steps {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .app-cards {
+        grid-template-columns: 1fr;
+      }
+      .product-header h1 {
+        font-size: 36px;
+      }
+    }
+    @media (max-width: 768px) {
+      .product-header h1 {
+        font-size: 28px;
+      }
+      .section-title {
+        font-size: 24px;
+      }
+      .principle-steps {
+        grid-template-columns: 1fr;
+      }
+      .detail-cta-inner {
+        flex-direction: column;
+        text-align: center;
+      }
+      .feature-item {
+        padding: 22px 20px 22px 44px;
+      }
+      .feature-item::before {
+        left: 18px;
+        top: 26px;
+        width: 11px;
+        height: 11px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ============ NAVIGATION (global) ============ -->
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a href="../../../index.html" class="nav-logo"><img src="../../../images/logo-color.png" alt="XingQing Machinery" height="36"> XingQing Machinery</a>
+                  <div class="nav-links">
+        <a href="../../../index.html">Home</a>
+        <a href="../../../products/crushing.html">Products</a>
+        <a href="../../../projects/">Projects</a>
+        <a href="../../../about/">About Us</a>
+        <a href="../../../contact/">Contact Us</a>
+      </div>
+      <div class="nav-actions">
+        <a href="../../../contact/" class="nav-cta">Get a Quote</a>
+      </div>
+      <button class="nav-hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="mobile-overlay"></div>
+  <div class="mobile-menu">
+    <button class="mobile-close">&times;</button>
+    
+    
+    
+    
+    
+    
+          <a href="../../../index.html">Home</a>
+    <a href="../../../products/crushing.html">Products</a>
+    <a href="../../../projects/">Projects</a>
+    <a href="../../../about/">About Us</a>
+    <a href="../../../contact/">Contact Us</a>
+    </div>
+
+  <!-- ============ BREADCRUMB ============ -->
+  <section class="breadcrumb">
+    <div class="container">
+      <nav class="breadcrumb-nav">
+        <a href="../../../index.html">Home</a>
+        <span class="sep">/</span>
+        <a href="../../../products/crushing.html">Crushing Equipment</a>
+        <span class="sep">/</span>
+        <span class="current">Shaftless Roller Screen</span>
+      </nav>
+    </div>
+  </section>
+
+  <!-- ============ PRODUCT HEADER ============ -->
+  <section class="product-header">
+    <div class="container">
+      <h1><span class="en">Shaftless Roller Screen</span></h1>
+    </div>
+  </section>
+
+  <!-- ============ HERO ROW ============ -->
+  <section class="hero-row container">
+    <div class="hero-row-left">
+      <div class="series-tag">GS Series — Tangle-Free Screening</div>
+      <p class="product-desc">GS Series shaftless roller screen — no center shaft structure for tangle-free fine screening of sticky and fibrous materials.</p>
+      <div class="hero-actions">
+        <a href="../../../contact/" class="btn btn-primary">Get a Quote</a>
+        <a href="#" class="btn btn-outline">Download Brochure</a>
+      </div>
+    </div>
+    <div class="hero-row-right">
+      <img src="../../images/无轴滚筒筛.jpg" alt="Shaftless Roller Screen" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+      <div class="img-placeholder" style="display:none;">Jaw Crusher</div>
+    </div>
+  </section>
+
+  <!-- ============ 1. Product Overview ============ -->
+  <section class="detail-section">
+    <div class="container">
+      <h2 class="section-title">Product Overview<span class="en">Product Overview</span></h2>
+      <p class="overview-text">The shaftless roller screen is a specialized screening equipment featuring a unique no-center-shaft design. Unlike traditional drum screens that rely on a central rotating shaft, the GS series uses individually driven rollers arranged in a curved or straight line to form the screening surface. This design eliminates the problem of material winding around the shaft, making it ideal for screening sticky, fibrous, or stringy materials that would clog conventional screens. The rollers rotate in the same direction, conveying material forward while fines pass through the gaps between rollers. This design achieves high screening efficiency with minimal clogging, low noise, and easy maintenance. The shaftless roller screen is widely used in sand and gravel classification, waste sorting, coal grading, and construction waste recycling, handling materials with high moisture content and sticky characteristics that are difficult for conventional vibrating screens.</p>
+    </div>
+  </section>
+
+  <!-- ============ 2. Working Principle ============ -->
+  <section class="detail-section">
+    <div class="container">
+      <h2 class="section-title">Working Principle<span class="en">Working Principle</span></h2>
+      <div class="principle-steps">
+        <div class="principle-step">
+          <div class="step-num">1</div>
+          <h3>Feed</h3>
+          <p>The moving jaw retreats, increasing chamber volume, and material feeds into the chamber by gravity.</p>
+        </div>
+        <div class="principle-step">
+          <div class="step-num">2</div>
+          <h3>Crushing</h3>
+          <p>The moving jaw advances, compressing and shearing the material between moving and fixed jaw plates, causing fragmentation.</p>
+        </div>
+        <div class="principle-step">
+          <div class="step-num">3</div>
+          <h3>Discharge</h3>
+          <p>When crushed material is smaller than the discharge opening, it is automatically discharged from the crushing chamber bottom.</p>
+        </div>
+        <div class="principle-step">
+          <div class="step-num">4</div>
+          <h3>Cycle</h3>
+          <p>Each eccentric shaft revolution completes one "feed-crush-discharge" cycle for continuous crushing.</p>
+        </div>
+      </div>
+      <div class="principle-flow">
+        <div class="flow-label">Crushing Force Transmission Path</div>
+        <div class="flow-path">
+          Motor<span class="arrow">→</span>V-belt<span class="arrow">→</span>Belt Pulley<span class="arrow">→</span>Eccentric Shaft<span class="arrow">→</span>Moving Jaw<span class="arrow">→</span>Toggle Plate<span class="arrow">→</span>Frame
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 3. Product Features ============ -->
+  <section class="detail-section">
+    <div class="container">
+      <h2 class="section-title">Product Features<span class="en">Product Features</span></h2>
+      <div class="features-grid-2col">
+        <div class="feature-item">
+          <h3>Large Crushing Ratio</h3>
+          <p>Deep cavity crushing, V-shaped chamber design, crushing ratio up to 6-8, reducing crushing stages and downstream equipment investment.</p>
+        </div>
+        <div class="feature-item">
+          <h3>High Output</h3>
+          <p>Optimized chamber design, large eccentric throw, production efficiency increased by 30%; deep cavity with no dead zones for stronger feeding capacity.</p>
+        </div>
+        <div class="feature-item">
+          <h3>Uniform Particle Size</h3>
+          <p>Wedge-type discharge opening adjustment for good product shape; shim adjustment is reliable and convenient with wide range for various gradations.</p>
+        </div>
+        <div class="feature-item">
+          <h3>Simple Structure</h3>
+          <p>Modular design, fewer wear parts for easy daily maintenance; quick-access maintenance ports reduce downtime.</p>
+        </div>
+        <div class="feature-item">
+          <h3>Reliable Operation</h3>
+          <p>Moving jaw assembly uses high-quality steel castings, heavy-duty eccentric shaft, stable operation; toggle plate auto overload protection for worry-free safety.</p>
+        </div>
+        <div class="feature-item">
+          <h3>Easy Maintenance</h3><p>Individual roller modules can be replaced independently without dismantling the entire screen structure.</p>
+        </div>
+        <div class="feature-item">
+          <h3>Economical & Energy-saving</h3>
+          <p>15-30% energy savings per unit, over double for system; low noise, less dust, low operating cost, green and environmentally friendly.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 4. Application Fields ============ -->
+  <section class="detail-section">
+    <div class="container">
+      <h2 class="section-title">Application Fields<span class="en">Application Fields</span></h2>
+      <div class="app-cards">
+        <div class="app-card">
+          <h3>Mining Industry</h3>
+          <p>The main battlefield for primary crushing of metal ores (iron/copper/gold/manganese) and non-metal ores, can form a complete crushing-beneficiation-grinding production line with magnetic separators and ball mills。</p>
+        </div>
+        <div class="app-card">
+          <h3>Building Materials</h3>
+          <p>Cement raw materials, limestone, sandstone crushing. Multi-stage toothed liners ensure uniform particle size, output meets concrete mixing station gradation requirementsquirements。</p>
+        </div>
+        <div class="app-card">
+          <h3>Metallurgical Industry</h3>
+          <p>Manganese ore, chromite and other high-hardness alloy ore crushing. High-strength alloy steel frame withstands continuous impact of Mohs hardness 7-8.</p>
+        </div>
+        <div class="app-card">
+          <h3>Environmental Recycling</h3>
+          <p>Waste construction debris and industrial slag recycling crushing, with optional dust and noise control devices to meet environmental compliance requirements around urban areas.</p>
+        </div>
+      </div>
+      <div class="app-tags">
+        <span class="app-tag">Construction Waste</span>
+        <span class="app-tag">Basalt</span>
+        <span class="app-tag">River Gravel</span>
+        <span class="app-tag">Limestone</span>
+        <span class="app-tag">Iron Ore</span>
+        <span class="app-tag">Copper Ore</span>
+        <span class="app-tag">Gold Ore</span>
+        <span class="app-tag">Manganese Ore</span>
+        <span class="app-tag">Quartz</span>
+        <span class="app-tag">Construction Waste</span>
+        <span class="app-tag">Coal Gangue</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 7. Selection Advice ============ -->
+  <section class="detail-section">
+    <div class="container">
+      <h2 class="section-title">Selection Advice<span class="en">Selection Advice</span></h2>
+      <ol class="advice-list">
+        <li><strong>Material Hardness：</strong>For Mohs hardness 7-8 (granite, basalt), choose PE-600×900  and above models with high manganese steel jaw plates for extended wear life。</li>
+        <li><strong>Capacity Requirements:</strong>For daily capacity under 500 tons, choose PE-400×600 ~ PE-600×900；For thousand-ton production lines, choose PE-900×1200 models and above。</li>
+        <li><strong>PE vs PEX Selection：</strong>PE  SeriesSuitable for primary crushing，PEX  SeriesSuitable for secondary crushing，Can be combined to form a complete crushing process。</li>
+        <li><strong>Wet/Sticky Materials：</strong>Increase discharge opening or add drying pretreatment to prevent material clogging，Ensure continuous stable production。</li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ BOTTOM CTA ============ -->
+  <section class="detail-cta">
+    <div class="container detail-cta-inner">
+      <p class="detail-cta-text">Interested in <span>Shaftless Roller Screen</span>? Contact us now for a quote and solution</p>
+      <div class="detail-cta-btns">
+        <a href="../../../contact/" class="btn btn-primary">Get a Quote</a>
+        <a href="mailto:1106897155@qq.com" class="btn btn-outline">Send Email</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER (global) ============ -->
+      <footer class="footer">
+    <div class="container">
+      <div class="footer-grid" style="grid-template-columns:1fr 1fr;">
+        <div class="footer-brand">
+          <a href="../../../" class="nav-logo"><img src="../../../images/logo-color.png" alt="XingQing Machinery" height="36"> XingQing Machinery</a>
+          <p>ISO 9001 certified mining equipment manufacturer since 2008.</p>
+        </div>
+        <div class="footer-col" style="text-align:right;">
+          <h4>Contact</h4>
+          <a href="mailto:1106897155@qq.com">1106897155@qq.com</a>
+          <a href="tel:+861972931688">+86 19712931688</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 XingQing Machinery. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../../../js/main.js"></script>
+</body>
+</html>

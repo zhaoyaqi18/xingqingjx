@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="XingQing Machinery MBS Rod Mill, φ900×1800~φ3200×4500, capacity 3-260t/h. Line contact grinding, uniform discharge, minimal over-grinding, sand shaping and coarse grinding.">
+  <title>Rod Mill | XingQing Machinery</title>
+  <link rel="icon" href="../../images/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../../../css/style.css">
+  <style>
+    /* ============================================
+       Rod Mill Detail Page - Custom Styles
+       ============================================ */
+
+    /* ---------- Breadcrumb ---------- */
+    .breadcrumb {
+      padding: 100px 0 20px;
+      background: var(--bg-primary);
+    }
+    .breadcrumb-nav {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13px;
+      color: var(--text-secondary);
+    }
+    .breadcrumb-nav a {
+      color: var(--text-secondary);
+      transition: color var(--transition);
+    }
+    .breadcrumb-nav a:hover { color: var(--accent); }
+    .breadcrumb-nav .sep {
+      color: var(--border);
+      user-select: none;
+    }
+    .breadcrumb-nav .current {
+      color: var(--accent);
+      font-weight: 500;
+    }
+
+    /* ---------- Product Header ---------- */
+    .product-header {
+      padding: 20px 0 48px;
+      background: var(--bg-primary);
+    }
+    .product-header h1 {
+      font-size: 48px;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      line-height: 1.15;
+    }
+    .product-header h1 .en {
+      color: var(--accent);
+    }
+
+    /* ---------- Hero Row ---------- */
+    .hero-row {
+      display: grid;
+      grid-template-columns: 1fr 1.1fr;
+      gap: 60px;
+      align-items: center;
+      padding: 0 0 64px;
+      background: var(--bg-primary);
+    }
+    .hero-row-left {
+      max-width: 520px;
+    }
+    .hero-row-left .series-tag {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      border: 1px solid rgba(245,166,35,0.35);
+      padding: 6px 14px;
+      border-radius: 4px;
+      margin-bottom: 20px;
+    }
+    .hero-row-left .product-desc {
+      font-size: 17px;
+      color: var(--text-secondary);
+      line-height: 1.7;
+      margin-bottom: 32px;
+    }
+    .hero-row-left .hero-actions {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+    .hero-row-right {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .hero-row-right img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+    }
+    .hero-row-right .img-placeholder {
+      width: 100%;
+      aspect-ratio: 4/3;
+      background: var(--bg-secondary);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--border);
+      font-size: 48px;
+    }
+
+    /* ---------- Section Title ---------- */
+    .section-title {
+      font-size: 30px;
+      font-weight: 800;
+      color: var(--text-primary);
+      letter-spacing: -0.01em;
+      margin: 0 0 32px;
+      padding-left: 18px;
+      border-left: 4px solid var(--accent);
+      line-height: 1.2;
+    }
+    .section-title .en {
+      display: block;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--text-secondary);
+      margin-top: 6px;
+    }
+    .detail-section {
+      padding: 56px 0;
+      border-top: 1px solid var(--border);
+    }
+
+    /* ---------- Overview ---------- */
+    .overview-text {
+      font-size: 16px;
+      line-height: 1.85;
+      color: var(--text-secondary);
+      max-width: 880px;
+    }
+
+    /* ---------- Working Principle ---------- */
+    .principle-steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      margin-bottom: 40px;
+    }
+    .principle-step {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 28px 24px;
+      position: relative;
+      transition: border-color var(--transition);
+    }
+    .principle-step:hover {
+      border-color: var(--accent);
+    }
+    .principle-step .step-num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background: var(--accent);
+      color: #1a1a1a;
+      font-size: 17px;
+      font-weight: 800;
+      margin-bottom: 16px;
+    }
+    .principle-step h3 {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 10px;
+    }
+    .principle-step p {
+      font-size: 13px;
+      line-height: 1.7;
+      color: var(--text-secondary);
+    }
+    .principle-flow {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 24px 28px;
+    }
+    .principle-flow .flow-label {
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 12px;
+    }
+    .principle-flow .flow-path {
+      font-size: 15px;
+      color: var(--text-primary);
+      line-height: 1.8;
+      font-weight: 600;
+    }
+    .principle-flow .flow-path .arrow {
+      color: var(--accent);
+      margin: 0 8px;
+    }
+
+    /* ---------- Params Table ---------- */
+    .table-scroll {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+    }
+    .params-table {
+      width: 100%;
+      min-width: 1000px;
+      border-collapse: collapse;
+      font-size: 13px;
+    }
+    .params-table thead {
+      background: var(--bg-secondary);
+    }
+    .params-table th {
+      padding: 14px 10px;
+      text-align: center;
+      font-weight: 700;
+      font-size: 11px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: var(--accent);
+      border-bottom: 1px solid var(--border);
+      white-space: nowrap;
+    }
+    .params-table td {
+      padding: 11px 10px;
+      text-align: center;
+      color: var(--text-secondary);
+      border-bottom: 1px solid var(--border);
+      white-space: nowrap;
+    }
+    .params-table tbody tr:nth-child(even) {
+      background: rgba(255,255,255,0.015);
+    }
+    .params-table tbody tr:hover {
+      background: rgba(245,166,35,0.06);
+    }
+    .params-table .model-col {
+      color: var(--text-primary);
+      font-weight: 600;
+    }
+    .params-note {
+      margin-top: 14px;
+      font-size: 12px;
+      color: var(--text-secondary);
+    }
+
+    /* ---------- Structure Table ---------- */
+    .structure-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .structure-table thead {
+      background: var(--bg-secondary);
+    }
+    .structure-table th {
+      padding: 14px 18px;
+      text-align: left;
+      font-weight: 700;
+      font-size: 13px;
+      letter-spacing: 0.05em;
+      color: var(--accent);
+      border-bottom: 1px solid var(--border);
+    }
+    .structure-table td {
+      padding: 14px 18px;
+      color: var(--text-secondary);
+      border-bottom: 1px solid var(--border);
+      line-height: 1.6;
+      vertical-align: top;
+    }
+    .structure-table tbody tr:nth-child(even) {
+      background: rgba(255,255,255,0.015);
+    }
+    .structure-table tbody tr:hover {
+      background: rgba(245,166,35,0.06);
+    }
+    .structure-table .part-col {
+      color: var(--text-primary);
+      font-weight: 700;
+      white-space: nowrap;
+    }
+    .structure-table .mat-col {
+      color: var(--accent);
+      white-space: nowrap;
+    }
+
+    /* ---------- Features Grid ---------- */
+    .features-grid-2col {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+    .feature-item {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 28px 28px 28px 52px;
+      position: relative;
+      transition: border-color var(--transition);
+    }
+    .feature-item:hover {
+      border-color: var(--accent);
+    }
+    .feature-item::before {
+      content: '';
+      position: absolute;
+      left: 22px;
+      top: 32px;
+      width: 14px;
+      height: 14px;
+      background: var(--accent);
+      transform: rotate(45deg);
+      border-radius: 2px;
+    }
+    .feature-item h3 {
+      font-size: 16px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: var(--text-primary);
+    }
+    .feature-item p {
+      font-size: 13px;
+      color: var(--text-secondary);
+      line-height: 1.65;
+    }
+
+    /* ---------- Application Cards ---------- */
+    .app-cards {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      margin-bottom: 36px;
+    }
+    .app-card {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 28px;
+      transition: border-color var(--transition);
+    }
+    .app-card:hover {
+      border-color: var(--accent);
+    }
+    .app-card h3 {
+      font-size: 17px;
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .app-card h3::before {
+      content: '';
+      width: 8px;
+      height: 8px;
+      background: var(--accent);
+      transform: rotate(45deg);
+      border-radius: 1px;
+      flex-shrink: 0;
+    }
+    .app-card p {
+      font-size: 14px;
+      line-height: 1.75;
+      color: var(--text-secondary);
+    }
+    .app-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .app-tag {
+      display: inline-block;
+      padding: 10px 22px;
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--text-secondary);
+      background: var(--bg-secondary);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      transition: all var(--transition);
+    }
+    .app-tag:hover {
+      color: var(--accent);
+      border-color: var(--accent);
+      background: rgba(245,166,35,0.06);
+    }
+
+    /* ---------- Selection Advice ---------- */
+    .advice-list {
+      list-style: none;
+      counter-reset: advice;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      gap: 16px;
+    }
+    .advice-list li {
+      counter-increment: advice;
+      background: var(--bg-secondary);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 22px 24px 22px 64px;
+      position: relative;
+      font-size: 14px;
+      line-height: 1.75;
+      color: var(--text-secondary);
+    }
+    .advice-list li::before {
+      content: counter(advice);
+      position: absolute;
+      left: 20px;
+      top: 22px;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background: var(--accent);
+      color: #1a1a1a;
+      font-size: 15px;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .advice-list li strong {
+      color: var(--text-primary);
+    }
+
+    /* ---------- Bottom CTA ---------- */
+    .detail-cta {
+      padding: 64px 0;
+      background: var(--bg-secondary);
+      border-top: 1px solid var(--border);
+    }
+    .detail-cta-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 32px;
+      flex-wrap: wrap;
+    }
+    .detail-cta-text {
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--text-primary);
+    }
+    .detail-cta-text span {
+      color: var(--accent);
+    }
+    .detail-cta-btns {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    /* ---------- Responsive ---------- */
+    @media (max-width: 1024px) {
+      .hero-row {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+      .features-grid-2col {
+        grid-template-columns: 1fr;
+      }
+      .principle-steps {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .app-cards {
+        grid-template-columns: 1fr;
+      }
+      .product-header h1 {
+        font-size: 36px;
+      }
+    }
+    @media (max-width: 768px) {
+      .product-header h1 {
+        font-size: 28px;
+      }
+      .section-title {
+        font-size: 24px;
+      }
+      .principle-steps {
+        grid-template-columns: 1fr;
+      }
+      .detail-cta-inner {
+        flex-direction: column;
+        text-align: center;
+      }
+      .feature-item {
+        padding: 22px 20px 22px 44px;
+      }
+      .feature-item::before {
+        left: 18px;
+        top: 26px;
+        width: 11px;
+        height: 11px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ============ NAVIGATION (global) ============ -->
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a href="../../../index.html" class="nav-logo"><img src="../../../images/logo-color.png" alt="XingQing Machinery" height="36"> XingQing Machinery</a>
+                  <div class="nav-links">
+        <a href="../../../index.html">Home</a>
+        <a href="../../../products/crushing.html">Products</a>
+        <a href="../../../projects/">Projects</a>
+        <a href="../../../about/">About Us</a>
+        <a href="../../../contact/">Contact Us</a>
+      </div>
+      <div class="nav-actions">
+        <a href="../../../contact/" class="nav-cta">Get a Quote</a>
+      </div>
+      <button class="nav-hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <div class="mobile-overlay"></div>
+  <div class="mobile-menu">
+    <button class="mobile-close">&times;</button>
+    
+    
+    
+    
+    
+    
+          <a href="../../../index.html">Home</a>
+    <a href="../../../products/crushing.html">Products</a>
+    <a href="../../../projects/">Projects</a>
+    <a href="../../../about/">About Us</a>
+    <a href="../../../contact/">Contact Us</a>
+    </div>
+
+  <!-- ============ BREADCRUMB ============ -->
+  <section class="breadcrumb">
+    <div class="container">
+      <nav class="breadcrumb-nav">
+        <a href="../../../index.html">Home</a>
+        <span class="sep">/</span>
+        <a href="../../../products/grinding.html">Grinding Equipment</a>
+        <span class="sep">/</span>
+        <span class="current">Rod Mill</span>
+      </nav>
+    </div>
+  </section>
+
+  <!-- ============ PRODUCT HEADER ============ -->
+  <section class="product-header">
+    <div class="container">
+      <h1><span class="en">Rod Mill</span> MBS Rod Mill</h1>
+    </div>
+  </section>
+
+  <!-- ============ HERO ROW ============ -->
+  <section class="hero-row container">
+    <div class="hero-row-left">
+      <div class="series-tag">MBS0918 – MBS3245</div>
+      <p class="product-desc">Steel rods replace steel balls, line contact replaces surface contact. High coarse grinding efficiency, low over-grinding, uniform discharge particle size. Ideal choice for sand shaping and coarse grinding operations, saving over 40% power compared to traditional equipment.</p>
+      <div class="hero-actions">
+        <a href="../../../contact/" class="btn btn-primary">Get a Quote</a>
+        <a href="#" class="btn btn-outline">Download Brochure</a>
+      </div>
+    </div>
+    <div class="hero-row-right">
+      <img src="../../images/棒磨机.jpg" alt="MBS Rod Mill" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';">
+      <div class="img-placeholder" style="display:none;">MBS Rod Mill</div>
+    </div>
+  </section>
+
+  <!-- ============ 1. Product Overview ============ -->
+  <section class="detail-section">
+    <div class="container">
+      <h2 class="section-title">Product Overview<span class="en">Product Overview</span></h2>
+      <p class="overview-text">
+        The rod mill is mainly used for coarse grinding of materials above 1mm. When grinding coarse materials, the rod mill has higher throughput than a ball mill of the same specification. Product particle size generally does not exceed 4.7mm maximum, minimum not less than 0.4mm, with feed size 80% less than 20mm to 4mm, and max feed size up to 50mm. The rod mill sand maker is versatile and a practical and reliable sand shaping equipment. Suitable for fine and medium crushing of various hard and brittle materials including abrasives, refractories, cement, quartz sand, steel shot, slag powder, copper ore, iron ore, gold ore, concrete aggregate, and asphalt materials. Especially suitable for adjusting fineness modulus in manufactured sand production — an efficient and energy-saving stone crushing and sand making equipment.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ 2. Working Principle ============ -->
+  <section class="detail-section">
+    <div class="container">
+      <h2 class="section-title">Working Principle<span class="en">Working Principle</span></h2>
+      <div class="principle-steps">
+        <div class="principle-step">
+          <div class="step-num">1</div>
+          <h3>Feed</h3>
+          <p>Material (particle size ≤50mm) is continuously fed into the rotating cylinder through the feed opening. A certain number of steel rods are pre-loaded into the cylinder as grinding media.</p>
+        </div>
+        <div class="principle-step">
+          <div class="step-num">2</div>
+          <h3>Rod Lift</h3>
+          <p>The cylinder rotates at 17-29 r/min. Steel rods are carried up to a certain height by the liner under centrifugal force and friction, in a cascading or cataracting state.</p>
+        </div>
+        <div class="principle-step">
+          <div class="step-num">3</div>
+          <h3>Line Contact Grinding</h3>
+          <p>When steel rods fall, they strike material through line contact — first hitting coarse particles then grinding fine particles, reducing over-grinding. Rolling and grinding between steel rods further mills the material.</p>
+        </div>
+        <div class="principle-step">
+          <div class="step-num">4</div>
+          <h3>Discharge</h3>
+          <p>Ground material is discharged by overflow and the thrust of continuous feeding, entering the next process stage. The rod mill discharge end is equipped with a discharge grate plate to prevent steel rods from discharging.</p>
+        </div>
+      </div>
+      <div class="principle-flow">
+        <div class="flow-label">Power Transmission Path</div>
+        <div class="flow-path">
+          Motor<span class="arrow">→</span>Reducer<span class="arrow">→</span>Pinion<span class="arrow">→</span>Ring Gear<span class="arrow">→</span>Cylinder<span class="arrow">→</span>Liner<span class="arrow">→</span>Steel Rod<span class="arrow">→</span>Material
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 3. Technical Parameters ============ -->
+  <section class="detail-section">
+    <div class="container">
+      <h2 class="section-title">Technical Parameters<span class="en">Technical Parameters</span></h2>
+      <div class="table-scroll">
+        <table class="params-table">
+          <thead>
+            <tr>
+              <th>Model & Spec</th>
+              <th>Cylinder Dia. (mm)</th>
+              <th>Cylinder Length (mm)</th>
+              <th>Speed (r/min)</th>
+              <th>Discharge Size (mm)</th>
+              <th>Capacity (t/h)</th>
+              <th>Motor power (kW)</th>
+              <th>Weight (kg)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td class="model-col">MBS0918</td><td>900</td><td>1800</td><td>29</td><td>0-5</td><td>3-8</td><td>22</td><td>4,500</td></tr>
+            <tr><td class="model-col">MBS0924</td><td>900</td><td>2400</td><td>29</td><td>0-5</td><td>5-25</td><td>45</td><td>12,000</td></tr>
+            <tr><td class="model-col">MBS1224</td><td>1200</td><td>2400</td><td>27</td><td>0-5</td><td>6-35</td><td>55</td><td>13,800</td></tr>
+            <tr><td class="model-col">MBS1530</td><td>1500</td><td>3000</td><td>23</td><td>0-5</td><td>7-45</td><td>90</td><td>17,000</td></tr>
+            <tr><td class="model-col">MBS1830</td><td>1830</td><td>3000</td><td>22.8</td><td>0-5</td><td>10-85</td><td>132</td><td>24,700</td></tr>
+            <tr><td class="model-col">MBS2130</td><td>2100</td><td>3000</td><td>20.9</td><td>0-5</td><td>30-100</td><td>210</td><td>34,000</td></tr>
+            <tr><td class="model-col">MBS2136</td><td>2100</td><td>3600</td><td>20.9</td><td>0-5</td><td>40-135</td><td>245</td><td>38,000</td></tr>
+            <tr><td class="model-col">MBS2430</td><td>2400</td><td>3000</td><td>20.9</td><td>0-5</td><td>50-150</td><td>320</td><td>50,000</td></tr>
+            <tr><td class="model-col">MBS2736</td><td>2700</td><td>3600</td><td>19</td><td>0-5</td><td>60-185</td><td>400</td><td>69,000</td></tr>
+            <tr><td class="model-col">MBS2740</td><td>2700</td><td>4000</td><td>19</td><td>0-5</td><td>70-215</td><td>500</td><td>81,000</td></tr>
+            <tr><td class="model-col">MBS3245</td><td>3200</td><td>4500</td><td>17.5</td><td>0-5</td><td>80-260</td><td>630</td><td>137,000</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="params-note">※ Capacity varies with material properties, feed size and other factors. Specifications subject to change without notice.</p>
+    </div>
+  </section>
+
+  <!-- ============ 4. Structure Components ============ -->
+  <section class="detail-section">
+    <div class="container">
+      <h2 class="section-title">Structure Components<span class="en">Structure Components</span></h2>
+      <table class="structure-table">
+        <thead>
+          <tr>
+            <th>Component</th>
+            <th>Function</th>
+            <th>Material / Features</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="part-col">Cylinder</td>
+            <td>Core rotating component, carrying steel rods and material through the grinding process, with length-to-diameter ratio typically 2:1~1.4:1</td>
+            <td class="mat-col">Steel plate welded, flanged end covers</td>
+          </tr>
+          <tr>
+            <td class="part-col">Steel Rod (Grinding Media)</td>
+            <td>Strikes and grinds material through line contact — hits coarse particles first then fine particles, low over-grinding</td>
+            <td class="mat-col">High-carbon Chromium Alloy Steel, Φ40-100mm diameter</td>
+          </tr>
+          <tr>
+            <td class="part-col">Feeder</td>
+            <td>Continuously feeds material into the cylinder through spiral feeding.</td>
+            <td class="mat-col">Cast steel feed spiral + feed chute</td>
+          </tr>
+          <tr>
+            <td class="part-col">Discharge Device</td>
+            <td>Overflow type discharge, with grate plate at discharge end to prevent steel rod discharge while allowing qualified fines to overflow.</td>
+            <td class="mat-col">Discharge Grate Plate + Discharge Hollow Shaft</td>
+          </tr>
+          <tr>
+            <td class="part-col">Drive System</td>
+            <td>Drives cylinder rotation, motor transmits power through reducer and gear set.</td>
+            <td class="mat-col">Motor + Reducer + Gear Set</td>
+          </tr>
+          <tr>
+            <td class="part-col">Liner</td>
+            <td>Protects cylinder inner wall, with lifting bars that carry steel rods to a certain height.</td>
+            <td class="mat-col">High Manganese Steel / Alloy Steel Liner</td>
+          </tr>
+          <tr>
+            <td class="part-col">Main Bearing</td>
+            <td>Supports stable cylinder rotation, bearing total load of cylinder, steel rods and material.</td>
+            <td class="mat-col">Plain bearing, forced circulation lubrication</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ============ 5. Product Features ============ -->
+  <section class="detail-section">
+    <div class="container">
+      <h2 class="section-title">Product Features<span class="en">Product Features</span></h2>
+      <div class="features-grid-2col">
+        <div class="feature-item">
+          <h3>Line Contact Grinding, Uniform Particle Size</h3>
+          <p>Steel rods use line contact instead of ball mill's point contact. During grinding, they first strike coarse particles then crush fines, resulting in more uniform discharge particle size with good continuous gradation.</p>
+        </div>
+        <div class="feature-item">
+          <h3>Low Over-grinding</h3>
+          <p>Steel rods preferentially act on coarse particles when striking ore. Already crushed fine particles are not easily re-crushed, effectively avoiding over-grinding with low powder content in finished product.</p>
+        </div>
+        <div class="feature-item">
+          <h3>High Coarse Grinding Capacity</h3>
+          <p>When grinding coarse materials above 1mm, the rod mill has higher throughput than a ball mill of the same specification, suitable for coarse grinding stage.</p>
+        </div>
+        <div class="feature-item">
+          <h3>Energy Saving</h3>
+          <p>Saves over 40% power compared to traditional sand making equipment with low operating costs. Advanced controllable feed/discharge technology with appropriate grinding media increases output by nearly 50%.</p>
+        </div>
+        <div class="feature-item">
+          <h3>Excellent Sand Shaping Effect</h3>
+          <p>High medium sand ratio, good particle shape with few sharp edges. Especially suitable for adjusting fineness modulus in manufactured sand production and sand shaping.</p>
+        </div>
+        <div class="feature-item">
+          <h3>Wide Application Range</h3>
+          <p>Can process various hard and brittle materials including quartzite, iron ore, copper ore, gold ore, slag and pebbles. Both dry and wet types available, adapting to different process requirements.</p>
+        </div>
+        <div class="feature-item">
+          <h3>Reliable Operation, Convenient Maintenance</h3>
+          <p>Mature structural design with reliable flange connection between cylinder and end covers. Steel rod replacement is simple with low daily maintenance, suitable for continuous production.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 6. Application Fields ============ -->
+  <section class="detail-section">
+    <div class="container">
+      <h2 class="section-title">Application Fields<span class="en">Application Fields</span></h2>
+      <div class="app-cards">
+        <div class="app-card">
+          <h3>Manufactured Sand</h3>
+          <p>Core equipment in manufactured sand production lines, especially suitable for sand shaping and fineness modulus adjustment. Pebbles, granite, limestone etc. produce well-shaped manufactured sand after rod milling.</p>
+        </div>
+        <div class="app-card">
+          <h3>Metal Mines</h3>
+          <p>Coarse grinding stage for iron ore, copper ore, gold ore and lead-zinc ore, providing qualified particle size for subsequent ball milling and flotation. Classic choice for single-stage open-circuit grinding.</p>
+        </div>
+        <div class="app-card">
+          <h3>Building Materials & Refractories</h3>
+          <p>Cement raw material pre-grinding, quartz sand fine grinding, refractory raw material processing. Grinding and reuse of industrial byproducts such as steel shot and slag powder.</p>
+        </div>
+        <div class="app-card">
+          <h3>Chemical & Glass</h3>
+          <p>Grinding operations with high uniformity requirements for chemical and glass raw materials. Processing, crushing and sand making of ore materials such as potassium feldspar and quartzite.</p>
+        </div>
+      </div>
+      <div class="app-tags">
+        <span class="app-tag">Quartz Sand</span>
+        <span class="app-tag">Iron Ore</span>
+        <span class="app-tag">Copper Ore</span>
+        <span class="app-tag">Gold Ore</span>
+        <span class="app-tag">River Pebble</span>
+        <span class="app-tag">Cement Clinker</span>
+        <span class="app-tag">Slag</span>
+        <span class="app-tag">Potassium Feldspar</span>
+        <span class="app-tag">Steel Shot</span>
+        <span class="app-tag">Concrete Aggregate</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 7. Selection Advice ============ -->
+  <section class="detail-section">
+    <div class="container">
+      <h2 class="section-title">Selection Advice<span class="en">Selection Advice</span></h2>
+      <ol class="advice-list">
+        <li><strong>Capacity Matching:</strong>Small sand plants or labs choose MBS0918~1224 (3-35 t/h); medium sand lines choose MBS1530~2136 (7-135 t/h); large mine beneficiation choose MBS2430~3245 (50-260 t/h).</li>
+        <li><strong>Feed Size:</strong>Max rod mill feed up to 50mm, but ≤25mm recommended for optimal efficiency. Oversize feed should be pre-crushed by a jaw crusher.</li>
+        <li><strong>Dry vs Wet:</strong>Wet rod mill has higher output and less dust, suitable for closed circuit with spiral classifier; dry rod mill suits water-deficient areas and dry production lines.</li>
+        <li><strong>Steel Rod Gradation:</strong>Steel rod diameter is typically Φ40-100mm, length 25-50mm shorter than cylinder. Coarse grinding uses large diameter rods, fine grinding uses small diameter rods. Rod filling rate is 35-45% of cylinder volume.</li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ BOTTOM CTA ============ -->
+  <section class="detail-cta">
+    <div class="container detail-cta-inner">
+      <p class="detail-cta-text">Interested in <span>Rod Mill</span>? Contact us now for a quote and solution</p>
+      <div class="detail-cta-btns">
+        <a href="../../../contact/" class="btn btn-primary">Get a Quote</a>
+        <a href="mailto:1106897155@qq.com" class="btn btn-outline">Send Email</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER (global) ============ -->
+      <footer class="footer">
+    <div class="container">
+      <div class="footer-grid" style="grid-template-columns:1fr 1fr;">
+        <div class="footer-brand">
+          <a href="../../../" class="nav-logo"><img src="../../../images/logo-color.png" alt="XingQing Machinery" height="36"> XingQing Machinery</a>
+          <p>ISO 9001 certified mining equipment manufacturer since 2008.</p>
+        </div>
+        <div class="footer-col" style="text-align:right;">
+          <h4>Contact</h4>
+          <a href="mailto:1106897155@qq.com">1106897155@qq.com</a>
+          <a href="tel:+861972931688">+86 19712931688</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 XingQing Machinery. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../../../js/main.js"></script>
+</body>
+</html>
