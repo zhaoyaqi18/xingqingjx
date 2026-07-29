@@ -1,14 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://www.xingqingjx.com/</loc><priority>1.0</priority></url>
-  <url><loc>https://www.xingqingjx.com/products/</loc><priority>0.9</priority></url>
-  <url><loc>https://www.xingqingjx.com/products/crushing.html</loc><priority>0.8</priority></url>
-  <url><loc>https://www.xingqingjx.com/products/grinding.html</loc><priority>0.8</priority></url>
-  <url><loc>https://www.xingqingjx.com/products/screening.html</loc><priority>0.8</priority></url>
-  <url><loc>https://www.xingqingjx.com/products/beneficiation.html</loc><priority>0.8</priority></url>
-  <url><loc>https://www.xingqingjx.com/products/feeding.html</loc><priority>0.8</priority></url>
-  <url><loc>https://www.xingqingjx.com/products/spare-parts.html</loc><priority>0.8</priority></url>
+  <url><loc>https://www.xingqingjx.com/products/crushing.html</loc><priority>0.9</priority></url>
+  <url><loc>https://www.xingqingjx.com/products/grinding.html</loc><priority>0.9</priority></url>
+  <url><loc>https://www.xingqingjx.com/products/screening.html</loc><priority>0.9</priority></url>
+  <url><loc>https://www.xingqingjx.com/products/beneficiation.html</loc><priority>0.9</priority></url>
+  <url><loc>https://www.xingqingjx.com/products/feeding.html</loc><priority>0.9</priority></url>
+  <url><loc>https://www.xingqingjx.com/products/spare-parts.html</loc><priority>0.9</priority></url>
+  <url><loc>https://www.xingqingjx.com/about/</loc><priority>0.7</priority></url>
   <url><loc>https://www.xingqingjx.com/projects/</loc><priority>0.7</priority></url>
   <url><loc>https://www.xingqingjx.com/news/</loc><priority>0.7</priority></url>
   <url><loc>https://www.xingqingjx.com/contact/</loc><priority>0.7</priority></url>
+  <url><loc>https://www.xingqingjx.com/products/detail/jaw-crusher/</loc><priority>0.7</priority></url>
+  <url><loc>https://www.xingqingjx.com/products/detail/cone-crusher/</loc><priority>0.7</priority></url>
+  <url><loc>https://www.xingqingjx.com/products/detail/impact-crusher/</loc><priority>0.7</priority></url>
+  <url><loc>https://www.xingqingjx.com/products/detail/hammer-crusher/</loc><priority>0.7</priority></url>
+  <url><loc>https://www.xingqingjx.com/products/detail/box-crusher/</loc><priority>0.7</priority></url>
+  <url><loc>https://www.xingqingjx.com/products/detail/roll-crusher/</loc><priority>0.7</priority></url>
+  <url><loc>https://www.xingqingjx.com/products/detail/toothed-roll-crusher/</loc><priority>0.7</priority></url>
+  <url><loc>https://www.xingqingjx.com/products/detail/two-stage-crusher/</loc><priority>0.7</priority></url>
+  <url><loc>https://www.xingqingjx.com/products/detail/mobile-crusher/</loc><priority>0.7</priority></url>
+  <url><loc>https://www.xingqingjx.com/products/detail/hydraulic-box-sand-maker/</loc><priority>0.7</priority></url>
+  <url><loc>https://www.xingqingjx.com/products/detail/vertical-shaft-cnc-sand-maker/</loc><priority>0.7</priority></url>
+  <url><loc>https://www.xingqingjx.com/products/detail/vsi-sand-maker/</loc><priority>0.7</priority></url>
+  <url><loc>https://www.xingqingjx.com/products/detail/ball-mill/</loc><priority>0.7</priority></url>
+  <url><loc>https://www.xingqingjx.com/products/detail/rod-mill/</loc><priority>0.7</priority></url>
+  <url><loc>https://www.xingqingjx.com/products/detail/raw-material-mill/</loc><priority>0.7</priority></url>
+  <url><loc>https://www.xingqingjx.com/products/detail/ceramic-ball-mill/</loc><priority>0.7</priority></url>
+  <url><loc>https://www.xingqingjx.com/products/detail/wet-pan-mill/</loc><priority>0.7</priority></url>
+  <url><loc>https://www.xingqingjx.com/products/detail/circular-vibrating-screen/</loc><priority>0.7</priority></url>
+  <url><loc>https://www.xingqingjx.com/products/detail/spiral-classifier/</loc><priority>0.7</priority></url>
+  <url><loc>https://www.xingqingjx.com/products/detail/dewatering-screen/</loc><priority>0.7</priority></url>
+  <url><loc>https://www.xingqingjx.com/products/detail/shaftless-roller-screen/</loc><priority>0.7</priority></url>
+  <url><loc>https://www.xingqingjx.com/products/detail/roller-stone-washer/</loc><priority>0.7</priority></url>
+  <url><loc>https://www.xingqingjx.com/products/detail/magnetic-separator/</loc><priority>0.7</priority></url>
+  <url><loc>https://www.xingqingjx.com/products/detail/flotation-machine/</loc><priority>0.7</priority></url>
+  <url><loc>https://www.xingqingjx.com/products/detail/spiral-chute/</loc><priority>0.7</priority></url>
+  <url><loc>https://www.xingqingjx.com/products/detail/shaking-table/</loc><priority>0.7</priority></url>
+  <url><loc>https://www.xingqingjx.com/products/detail/gold-concentrator/</loc><priority>0.7</priority></url>
+  <url><loc>https://www.xingqingjx.com/products/detail/dry-magnetic-roller/</loc><priority>0.7</priority></url>
+  <url><loc>https://www.xingqingjx.com/products/detail/mixing-bucket/</loc><priority>0.7</priority></url>
+  <url><loc>https://www.xingqingjx.com/products/detail/vibrating-feeder/</loc><priority>0.7</priority></url>
+  <url><loc>https://www.xingqingjx.com/products/detail/aggregate-line/</loc><priority>0.7</priority></url>
+  <url><loc>https://www.xingqingjx.com/products/detail/magnetic-line/</loc><priority>0.7</priority></url>
+  <url><loc>https://www.xingqingjx.com/products/detail/flotation-line/</loc><priority>0.7</priority></url>
+  <url><loc>https://www.xingqingjx.com/products/detail/apron-feeder.html</loc><priority>0.7</priority></url>
+  <url><loc>https://www.xingqingjx.com/products/detail/belt-conveyor.html</loc><priority>0.7</priority></url>
+  <url><loc>https://www.xingqingjx.com/products/detail/bucket-elevator.html</loc><priority>0.7</priority></url>
+  <url><loc>https://www.xingqingjx.com/products/detail/filter-press.html</loc><priority>0.7</priority></url>
+  <url><loc>https://www.xingqingjx.com/products/detail/jig-machine.html</loc><priority>0.7</priority></url>
+  <url><loc>https://www.xingqingjx.com/products/detail/raymond-mill.html</loc><priority>0.7</priority></url>
+  <url><loc>https://www.xingqingjx.com/products/detail/screw-conveyor.html</loc><priority>0.7</priority></url>
+  <url><loc>https://www.xingqingjx.com/products/detail/shredder.html</loc><priority>0.7</priority></url>
+  <url><loc>https://www.xingqingjx.com/products/detail/hydraulic-box-sand-maker.html</loc><priority>0.7</priority></url>
+  <url><loc>https://www.xingqingjx.com/products/detail/mobile-crusher.html</loc><priority>0.7</priority></url>
+  <url><loc>https://www.xingqingjx.com/products/detail/vertical-shaft-sand-maker.html</loc><priority>0.7</priority></url>
+  <url><loc>https://www.xingqingjx.com/products/detail/vsi-sand-maker.html</loc><priority>0.7</priority></url>
 </urlset>
